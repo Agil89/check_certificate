@@ -7,6 +7,7 @@ class Certificate(models.Model):
 
     """This field is for category types like: food,desert and others"""
     title = models.CharField('Title',max_length=60)
+    certificade_number =models.IntegerField()
     fullname = models.CharField('Fullname',max_length=50)
     image = models.ImageField('Image',upload_to = 'certificate_images')
     description = models.TextField('Description')

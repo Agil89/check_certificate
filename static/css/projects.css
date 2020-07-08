@@ -1,0 +1,9 @@
+.navbar {
+    height: 83px !important;
+    align-items: center !important;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between!important;
+    border-bottom: 1px solid gray !important;
+
+}

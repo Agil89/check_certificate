@@ -30,6 +30,4 @@ def info(request):
     return render(request,'info.html', context)
 
     
-def login(request):
-    return render(request,'login.html')
 

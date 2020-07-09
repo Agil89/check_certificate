@@ -10,7 +10,7 @@ class HomeForm(forms.Form):
 
     # recaptcha_input = forms.CharField(label='verification' , widget=forms.TextInput(attrs={
     #     'class':'form-control',
-<<<<<<< Updated upstream
+
     # }),max_length=40)
 
     def clean_verification(self):
@@ -20,6 +20,4 @@ class HomeForm(forms.Form):
             raise forms.ValidationError(_('Bele bir sertifikat tapilmadi'))
         return certificate_number
 
-=======
-    # }),max_length=40)
->>>>>>> Stashed changes
+

@@ -18,7 +18,7 @@
                 {% for field in form %}
                 <div class="col-9">
                     {{field}}
-                    <div style="color:red">{{field.errors}}</div>
+                    <span style="color:red;">{{field.errors}}</span>
                 </div>
                 {% endfor %}
                 <div class="col-9 offset-3  mt-5">

@@ -14,23 +14,21 @@
             </div>
             <div class="col-12 text-center p-5" style="background: rgb(170, 67, 49); color:white">
                 <h3 class="text-center" style="font-size: 20px">THIS CERTIFICATE IS PROUDLY PRESENTED TO </h3>
-                <h1 style="font-size: 40px; color:rgba(0, 0, 0, 0.644)"> Name Surname </h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro quas accusantium cupiditate
-                    quibusdam, blanditiis praesentium maxime fuga veritatis mollitia ab at exercitationem error.
-                    Corporis assumenda soluta sunt error, ut modi!</p>
+                <h1 style="font-size: 40px; color:rgba(0, 0, 0, 0.644)"> {{certificate.fullname}} </h1>
+                <p>{{certificate.description}}</p>
             </div>
             <div class="col-12 row m-0 p-5 text-center" style="background: rgb(170, 67, 49)">
                 <div class="col-4">
-                    Date
+                    {{certificate.training_session}}
                 </div>
                 <div class="col-4">
                     Logo
                 </div>
                 <div class="col-4">
-                    Signature
+                    {{certificate.instructor}}
                 </div>
             </div>
-            
+
 
         </div>
 

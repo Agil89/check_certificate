@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from main.forms import HomeForm
+from main.models import Certificate
 
 def home(request):
     if request.method == 'POST':
@@ -13,11 +14,12 @@ def home(request):
 
 
 def info(request):
-    certificates = Certificate.objects.all()
-    context = {
-        'certificates' : certificates
-    }
-    return render(request,'info.html',context)
+    # a= '123'
+    # certificate = Certificate.objects.get(certificade_number=a)
+    # context = {
+    #     'certificate' : certificate
+    # }
+    return render(request,'info.html')
 
     
 def login(request):

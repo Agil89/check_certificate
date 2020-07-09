@@ -9,12 +9,12 @@ class Certificate(models.Model):
     title = models.CharField('Title',max_length=60)
     certificade_number =models.IntegerField()
     fullname = models.CharField('Fullname',max_length=50)
-    image = models.ImageField('Image',upload_to = 'certificate_images')
+    image = models.FileField('Image',upload_to = 'certificate_images')
     description = models.TextField('Description')
-    logo = models.ImageField('Logo',upload_to = 'certificate_images')
     instructor = models.CharField('Instructor',max_length=50)
     training_session=models.CharField('Session',max_length=120)
-    training_date = models.CharField('Date',max_length=120)
+    started_at = models.DateTimeField(auto_now=True)
+    finished_at = models.DateTimeField(auto_now=True)
 
     #moderations
     is_published = models.BooleanField('is published', default=True)
